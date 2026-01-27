@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallucination Firewall | Multimodal AI Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Multimodal <span class="accent">Hallucination Firewall</span></h1>
+            <p>Advanced AI-Generated Image Detection & Text Fact-Checking System</p>
+        </header>
+
+        <section class="firewall-grid">
+            <!-- Input Card -->
+            <div class="glass-card input-section">
+                <h3><i class="icon-upload"></i> Analyze Content</h3>
+                <div class="input-group">
+                    <label for="text-input">Response Text</label>
+                    <textarea id="text-input" placeholder="Paste the AI system output here..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="image-upload">Upload Evidence Image</label>
+                    <div class="file-drop-zone" id="drop-zone">
+                        <input type="file" id="image-upload" accept="image/*" hidden>
+                        <div class="drop-zone-content">
+                            <p>Drag & drop or <span>browse</span></p>
+                            <small>Supports JPG, PNG, WEBP</small>
+                        </div>
+                    </div>
+                    <div id="image-preview" class="hidden">
+                        <img src="" alt="Preview">
+                        <button id="remove-img">✕</button>
+                    </div>
+                </div>
+
+                <button id="analyze-btn" class="primary-btn">
+                    <span class="btn-text">Run Security Scan</span>
+                    <div class="loader hidden"></div>
+                </button>
+            </div>
+
+            <!-- Results Card (Hidden until analyzed) -->
+            <div id="results-display" class="glass-card result-section hidden">
+                <div class="result-header">
+                    <h3>Analysis Dashboard</h3>
+                    <div id="status-badge" class="badge">Checking...</div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="label">Image Authenticity</span>
+                        <div id="img-auth-val" class="value">N/A</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Risk Level</span>
+                        <div id="risk-val" class="value">N/A</div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="label-row">
+                        <span>Confidence Score</span>
+                        <span id="confidence-percent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="explanation-panel">
+                    <h4>Explainable AI (XAI) Insights</h4>
+                    <p id="explanation-text">No data processed.</p>
+                </div>
+
+                <div class="footer-stats">
+                    <div class="footer-item">
+                        <span>Text Hallucination Score:</span>
+                        <strong id="text-score">0</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="system-info">
+            <div class="info-card">
+                <p><strong>Note:</strong> This firewall uses rule-based heuristics and frequency domain analysis. It provides probability estimates and should not be considered as absolute proof.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Firewall | Hallucination Firewall</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">FIREWALL.AI</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="image-check.html">Image Check</a>
+            <a href="text-check.html">Text Check</a>
+            <a href="firewall.html" class="active">Firewall</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header style="margin-bottom: 3rem; text-align: center;">
+            <h2>Multimodal <span class="accent"
+                    style="background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Security
+                    Firewall</span></h2>
+            <p>Combine signals from vision and language for the ultimate reliability verdict.</p>
+        </header>
+
+        <!-- Stepper UI -->
+        <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem;">
+            <div id="step-1-indicator" style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary);">
+                <div
+                    style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                    1</div>
+                <span>Input Payload</span>
+            </div>
+            <div style="width: 50px; height: 2px; background: var(--glass-border); align-self: center;"></div>
+            <div id="step-2-indicator" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-dim);">
+                <div
+                    style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                    2</div>
+                <span>Verification</span>
+            </div>
+            <div style="width: 50px; height: 2px; background: var(--glass-border); align-self: center;"></div>
+            <div id="step-3-indicator" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-dim);">
+                <div
+                    style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                    3</div>
+                <span>Final Verdict</span>
+            </div>
+        </div>
+
+        <section class="animate-fade">
+            <!-- Step 1: Input -->
+            <div id="step-1-card" class="glass-card">
+                <div class="grid-2">
+                    <div class="input-group">
+                        <label>AI System Output (Text)</label>
+                        <textarea id="text-input" placeholder="Enter the text response..."
+                            style="min-height: 200px;"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>AI System Output (Image)</label>
+                        <div id="drop-zone"
+                            style="border: 2px dashed var(--glass-border); border-radius: 16px; padding: 2rem; text-align: center; cursor: pointer;">
+                            <p>Drag or upload image evidence</p>
+                            <input type="file" id="image-upload" accept="image/*" hidden>
+                        </div>
+                        <div id="preview-container" class="hidden"
+                            style="margin-top: 1rem; border-radius: 12px; overflow: hidden; height: 140px; border: 1px solid var(--glass-border);">
+                            <img id="image-preview" src="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <button id="next-btn" class="btn btn-primary"
+                    style="width: 100%; margin-top: 2rem; justify-content: center;">Begin Multimodal Audit</button>
+            </div>
+
+            <!-- Step 2: Verification (Loader/Animation) -->
+            <div id="step-2-card" class="glass-card hidden" style="text-align: center; padding: 5rem;">
+                <div class="loader" style="width: 60px; height: 60px; margin: 0 auto 2rem; border-width: 4px;"></div>
+                <h3>Verifying Neural Fragments...</h3>
+                <p>Analyzing FFT spectra and linguistic markers.</p>
+            </div>
+
+            <!-- Step 3: Result -->
+            <div id="step-3-card" class="glass-card hidden">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <div id="verdict-icon" style="margin-bottom: 1.5rem;">
+                        <!-- Icon will change based on result -->
+                    </div>
+                    <h2 id="verdict-label">SAFE</h2>
+                    <div id="risk-badge" class="badge badge-safe">LOW RISK</div>
+                </div>
+
+                <div class="grid-2">
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 20px;">
+                        <h4 style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--primary);">Firewall Logic
+                            Decision</h4>
+                        <p id="decision-text" style="font-size: 0.95rem; line-height: 1.6;">Decision details...</p>
+                    </div>
+                    <div>
+                        <div
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                            <span>Security Score</span>
+                            <span id="score-val">0%</span>
+                        </div>
+                        <div
+                            style="height: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; overflow: hidden; margin-bottom: 2rem;">
+                            <div id="score-bar"
+                                style="width: 0%; height: 100%; background: linear-gradient(to right, var(--primary), var(--accent)); transition: width 1s;">
+                            </div>
+                        </div>
+                        <button id="reset-btn" class="btn btn-outline" style="width: 100%;">Start New Session</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/firewall.js"></script>
+</body>
+
+</html>

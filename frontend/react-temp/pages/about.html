@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Hallucination Firewall</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">FIREWALL.AI</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="image-check.html">Image Check</a>
+            <a href="text-check.html">Text Check</a>
+            <a href="firewall.html">Firewall</a>
+            <a href="history.html">History</a>
+            <a href="about.html" class="active">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header style="margin-bottom: 4rem;">
+            <h2>Project <span class="accent"
+                    style="background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Architecture</span>
+                & Design</h2>
+            <p>A deep dive into how the Hallucination Firewall protects multimodal systems.</p>
+        </header>
+
+        <section class="grid-2">
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem; color: var(--primary);">Problem Statement</h3>
+                <p>Generative AI models often produce "hallucinations" — outputs that are plausible but incorrect. In
+                    multimodal contexts, this includes synthetically generated images that pass for real and text that
+                    makes over-confident, false claims. Existing firewalls focus on network security, leaving a gap in
+                    "Semantic Security".</p>
+            </div>
+
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem; color: var(--accent);">Our Objectives</h3>
+                <ul style="color: var(--text-dim); line-height: 1.8; margin-left: 1.2rem;">
+                    <li>Detect AI-generated images using structural noise analysis.</li>
+                    <li>Identify linguistic markers of hallucination in text.</li>
+                    <li>Provide an explainable risk score (XAI) for every scan.</li>
+                    <li>Maintain a persistent ledger of all security audits.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="glass-card" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">System Flow</h3>
+            <div style="display: flex; justify-content: space-between; gap: 1rem; text-align: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">01
+                    </div>
+                    <div style="font-weight: 600;">Input Stage</div>
+                    <p style="font-size: 0.85rem;">User provides image/text payload for verification.</p>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">02
+                    </div>
+                    <div style="font-weight: 600;">Analysis Stage</div>
+                    <p style="font-size: 0.85rem;">FFT, Laplacian, and Rule-based text scoring.</p>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem;">03
+                    </div>
+                    <div style="font-weight: 600;">Decision Stage</div>
+                    <p style="font-size: 0.85rem;">Firewall aggregates risks into a final verdict.</p>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--warning); margin-bottom: 0.5rem;">04
+                    </div>
+                    <div style="font-weight: 600;">Audit Stage</div>
+                    <p style="font-size: 0.85rem;">Result is logged in the persistent history manager.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-2" style="margin-top: 2rem;">
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem;">Core Algorithms</h3>
+                <p><strong>Image:</strong> We use Fast Fourier Transform (FFT) to detect unnatural frequency spikes and
+                    Laplacian Variance to calculate image "smoothness" characteristic of AI GANs.</p>
+                <p style="margin-top: 1rem;"><strong>Text:</strong> Heuristic analysis of over-confidence words
+                    (absolute markers) and lack of hedging in long-form responses.</p>
+            </div>
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem;">Tech Stack</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">Python
+                        Flask</span>
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">OpenCV</span>
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">NumPy</span>
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">Vanilla
+                        JS</span>
+                    <span class="badge"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">CSS3
+                        Glassmorphism</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="margin-top: 5rem; text-align: center; padding: 2rem; border-top: 1px solid var(--glass-border); color: var(--text-dim); font-size: 0.9rem;">
+        <p>&copy; 2026 Multimodal Hallucination Firewall - Final Year Project</p>
+    </footer>
+</body>
+
+</html>
