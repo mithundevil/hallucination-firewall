@@ -20,14 +20,18 @@ The project utilizes a decoupled Client-Server architecture:
 
 ## 4. Key Features
 - **Hybrid Image Verification**: Combines a pretrained **CNN (ResNet-18)** with structural heuristics for maximum accuracy.
-- **Score Fusion Engine**: 60% CNN + 40% Heuristic weight distribution for final risk verdict.
-- **3-Class Image Classification**: Automatically distinguishes between Photographs, AI Generated Images, and non-photographic content (Cartoons/Logos).
+- **Robust Training Pipeline**: Custom PyTorch training script (`train_model.py`) with automatic class mapping and transparency handling.
+- **AI Safety & Diffusion Rules**:
+    - **Uncertainty-Aware Logic**: Replaces absolute labels with cautious verdicts (e.g., "Likely Real", "Suspicious").
+    - **Diffusion Safeguard**: Detects high-resolution synthetic images lacking metadata that might fool standard CNNs.
+- **Score Fusion Engine**: 70% CNN + 30% Heuristic weight distribution for final risk verdict.
+- **3-Class Image Classification**: Automatically distinguishes between Photographs, AI Generated Images, and non-photographic content.
 - **Weighted Text Hallucination Scoring**: Heuristic module tracking overconfidence, absolute claims, and speculative phrasing.
 - **Unified Risk Mapping**: Globally consistent mapping (0-30 Low, 31-60 Medium, 61-100 High).
 
 ## 5. Tech Stack
 - **Frontend**: React.js, Vite, Axios, Lucide Icons, Vanilla CSS.
-- **Backend**: Python 3.10+, Flask, OpenCV, NumPy, Pillow.
+- **Backend**: Python 3.10+, Flask, PyTorch, TorchVision, OpenCV, NumPy, Pillow.
 - **Data**: JSON-based persistent storage via `history.json`.
 
 ## 6. Installation & Execution

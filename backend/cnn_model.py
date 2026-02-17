@@ -52,10 +52,10 @@ class CNNPredictor:
                 outputs = self.model(batch_t)
                 probs = torch.nn.functional.softmax(outputs, dim=1)
                 
-                # FIX: Correcting Class Mapping
-                # If model was yielding Real at index 1, we invert to get AI probability.
-                # Based on user feedback of inversion, we now treat index 0 as AI Generated.
-                ai_prob = probs[0][0].item() * 100 
+                # Standard Mapping from train_model.py:
+                # Index 0: Real Image
+                # Index 1: AI Generated Image
+                ai_prob = probs[0][1].item() * 100 
                 return round(ai_prob, 2)
         except Exception as e:
             print(f"CNN Prediction Error: {e}")
