@@ -15,18 +15,19 @@ The project utilizes a decoupled Client-Server architecture:
 - **Backend (Python Flask)**:
     - `image_detector.py`: Structural analysis using FFT and Laplacian Noise variance.
     - `text_verifier.py`: Linguistic auditing for over-confidence and repetition.
+    - `video_analyzer.py`: Automated video audit using frame-based sampling.
     - `firewall_engine.py`: Logic layer for multimodal risk aggregation.
     - `history_manager.py`: Local persistent storage for security audit logs.
 
 ## 4. Key Features
+- **Video Verification Module**: Frame-by-frame analysis (1 FPS) using the trained ResNet-18 engine to identify AI indicators in video streams.
 - **Hybrid Image Verification**: Combines a pretrained **CNN (ResNet-18)** with structural heuristics for maximum accuracy.
 - **Robust Training Pipeline**: Custom PyTorch training script (`train_model.py`) with automatic class mapping and transparency handling.
 - **AI Safety & Diffusion Rules**:
     - **Uncertainty-Aware Logic**: Replaces absolute labels with cautious verdicts (e.g., "Likely Real", "Suspicious").
     - **Diffusion Safeguard**: Detects high-resolution synthetic images lacking metadata that might fool standard CNNs.
 - **Score Fusion Engine**: 70% CNN + 30% Heuristic weight distribution for final risk verdict.
-- **3-Class Image Classification**: Automatically distinguishes between Photographs, AI Generated Images, and non-photographic content.
-- **Weighted Text Hallucination Scoring**: Heuristic module tracking overconfidence, absolute claims, and speculative phrasing.
+- **Premium Glassmorphism UI**: High-end user experience with scanner animations, real-time progress, and neon aesthetics.
 - **Unified Risk Mapping**: Globally consistent mapping (0-30 Low, 31-60 Medium, 61-100 High).
 
 ## 5. Tech Stack

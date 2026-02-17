@@ -1,38 +1,41 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Shield, Image, FileText, Activity, History, Info } from 'lucide-react';
+import { Shield, Image, FileText, Video, Activity, History, Info } from 'lucide-react';
 
 const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div className="nav-container">
-                <NavLink to="/" className="logo">
-                    <Shield className="logo-icon" />
-                    <span>FIREWALL<span className="accent-text">.AI</span></span>
-                </NavLink>
-                <div className="nav-links">
-                    <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <Activity size={18} /> Home
-                    </NavLink>
-                    <NavLink to="/image-check" className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <Image size={18} /> Image Check
-                    </NavLink>
-                    <NavLink to="/text-check" className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <FileText size={18} /> Text Check
-                    </NavLink>
-                    <NavLink to="/firewall" className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <Shield size={18} /> Firewall
-                    </NavLink>
-                    <NavLink to="/history" className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <History size={18} /> History
-                    </NavLink>
-                    <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-                        <Info size={18} /> About
-                    </NavLink>
-                </div>
-            </div>
+  return (
+    <nav className="navbar">
+      <div className="nav-container">
+        <NavLink to="/" className="logo">
+          <Shield className="logo-icon" />
+          <span>FIREWALL<span className="accent-text">.AI</span></span>
+        </NavLink>
+        <div className="nav-links">
+          <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
+            <Activity size={18} /> Home
+          </NavLink>
+          <NavLink to="/image-check" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <Image size={18} /> Image Check
+          </NavLink>
+          <NavLink to="/text-check" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <FileText size={18} /> Text Check
+          </NavLink>
+          <NavLink to="/video-check" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <Video size={18} /> Video Check
+          </NavLink>
+          <NavLink to="/firewall" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <Shield size={18} /> Firewall
+          </NavLink>
+          <NavLink to="/history" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <History size={18} /> History
+          </NavLink>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <Info size={18} /> About
+          </NavLink>
+        </div>
+      </div>
 
-            <style jsx>{`
+      <style jsx>{`
         .navbar {
           position: sticky;
           top: 0;
@@ -87,8 +90,8 @@ const Navbar = () => {
           background: rgba(6, 182, 212, 0.1);
         }
       `}</style>
-        </nav>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;

@@ -1,5 +1,117 @@
 [
     {
+        "id": "20260217150025120579",
+        "timestamp": "2026-02-17T15:00:25.120851",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "video_label": "Likely Real Video",
+            "ai_frame_percentage": 7.0,
+            "total_frames_analyzed": 100,
+            "risk_level": "Low",
+            "explanation": "Video analysis complete. Processed 100 frames. 7% of frames showed high AI indicators, while 21% showed moderate signs.",
+            "average_ai_score": 25.26
+        }
+    },
+    {
+        "id": "20260217145330793686",
+        "timestamp": "2026-02-17T14:53:30.793754",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "High",
+        "score": 0,
+        "details": {
+            "video_label": "AI Generated Video",
+            "ai_frame_percentage": 90.91,
+            "total_frames_analyzed": 11,
+            "risk_level": "High",
+            "explanation": "Video analysis complete. Processed 11 frames. 90% of frames showed high AI indicators, while 100% showed moderate signs.",
+            "average_ai_score": 95.2
+        }
+    },
+    {
+        "id": "20260217145049219876",
+        "timestamp": "2026-02-17T14:50:49.219944",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "video_label": "Likely Real Video",
+            "ai_frame_percentage": 0.0,
+            "total_frames_analyzed": 12,
+            "risk_level": "Low",
+            "explanation": "Video analysis complete. Processed 12 frames. 0% of frames showed high AI indicators, while 0% showed moderate signs.",
+            "average_ai_score": 0.89
+        }
+    },
+    {
+        "id": "20260217144917574958",
+        "timestamp": "2026-02-17T14:49:17.575065",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "video_label": "Likely Real Video",
+            "ai_frame_percentage": 10.94,
+            "total_frames_analyzed": 64,
+            "risk_level": "Low",
+            "explanation": "Video analysis complete. Processed 64 frames. 10% of frames showed high AI indicators, while 21% showed moderate signs.",
+            "average_ai_score": 22.48
+        }
+    },
+    {
+        "id": "20260217144832902148",
+        "timestamp": "2026-02-17T14:48:32.902237",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "High",
+        "score": 0,
+        "details": {
+            "video_label": "AI Generated Video",
+            "ai_frame_percentage": 100.0,
+            "total_frames_analyzed": 9,
+            "risk_level": "High",
+            "explanation": "Video analysis complete. Processed 9 frames. 100% of frames showed high AI indicators, while 100% showed moderate signs.",
+            "average_ai_score": 99.99
+        }
+    },
+    {
+        "id": "20260217144312139374",
+        "timestamp": "2026-02-17T14:43:12.139448",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "High",
+        "score": 0,
+        "details": {
+            "video_label": "AI Generated Video",
+            "ai_frame_percentage": 100.0,
+            "total_frames_analyzed": 9,
+            "risk_level": "High",
+            "explanation": "Video analysis complete. Processed 9 frames. 100% of frames showed high AI indicators, while 100% showed moderate signs.",
+            "average_ai_score": 99.99
+        }
+    },
+    {
+        "id": "20260217142229309358",
+        "timestamp": "2026-02-17T14:22:29.309488",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "video_label": "Likely Real Video",
+            "ai_frame_percentage": 10.94,
+            "total_frames_analyzed": 64,
+            "risk_level": "Low",
+            "explanation": "Video analysis complete. Processed 64 frames. 10% of frames showed high AI indicators, while 21% showed moderate signs.",
+            "average_ai_score": 22.48
+        }
+    },
+    {
         "id": "20260217121401896769",
         "timestamp": "2026-02-17T12:14:01.896769",
         "type": "Image Check",
@@ -1013,156 +1125,6 @@
             "metrics": {
                 "laplacian_var": 405.7,
                 "fft_mean": 168.57,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127143803314184",
-        "timestamp": "2026-01-27T14:38:03.314214",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 35.01,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 35.02,
-            "heuristic_score": 35,
-            "score": 35.01,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (35.02%) | Heuristic Score (35%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 385.39,
-                "fft_mean": 161.0,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127143743786270",
-        "timestamp": "2026-01-27T14:37:43.786307",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 23.29,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 18.27,
-            "heuristic_score": 35,
-            "score": 23.29,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (18.27%) | Heuristic Score (35%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 299.22,
-                "fft_mean": 162.55,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127143721303420",
-        "timestamp": "2026-01-27T14:37:21.303492",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 38.92,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 29.89,
-            "heuristic_score": 60,
-            "score": 38.92,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (29.89%) | Heuristic Score (60%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 1552.2,
-                "fft_mean": 187.18,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127143518754646",
-        "timestamp": "2026-01-27T14:35:18.754689",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 35.14,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 24.48,
-            "heuristic_score": 60,
-            "score": 35.14,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (24.48%) | Heuristic Score (60%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 1989.74,
-                "fft_mean": 154.4,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127141733443575",
-        "timestamp": "2026-01-27T14:17:33.443633",
-        "type": "Image Check",
-        "verdict": "Suspicious Image",
-        "risk": "High",
-        "score": 62.35,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 63.92,
-            "heuristic_score": 60,
-            "score": 62.35,
-            "risk_level": "High",
-            "result": "Suspicious Image",
-            "explanation": "CNN + Heuristic Fusion: Missing camera EXIF metadata. | Unusual frequency artifacts detected.",
-            "metrics": {
-                "laplacian_var": 1552.2,
-                "fft_mean": 187.18,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127141656211274",
-        "timestamp": "2026-01-27T14:16:56.211304",
-        "type": "Image Check",
-        "verdict": "Other (Graphic/Illustration)",
-        "risk": "Low",
-        "score": 0,
-        "details": {
-            "image_type": "Other Image",
-            "score": 0,
-            "risk_level": "Low",
-            "result": "Other (Graphic/Illustration)",
-            "explanation": "Detected as a Graphic/Cartoon/Screenshot. Non-photographic images are not subject to Deepfake analysis.",
-            "metrics": {
-                "is_photo": false
-            }
-        }
-    },
-    {
-        "id": "20260127141634079353",
-        "timestamp": "2026-01-27T14:16:34.079395",
-        "type": "Image Check",
-        "verdict": "AI Generated Image",
-        "risk": "High",
-        "score": 70.34,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 67.23,
-            "heuristic_score": 75,
-            "score": 70.34,
-            "risk_level": "High",
-            "result": "AI Generated Image",
-            "explanation": "CNN + Heuristic Fusion: Missing camera EXIF metadata. | Synthetic smoothness (low noise variance).",
-            "metrics": {
-                "laplacian_var": 46.87,
-                "fft_mean": 146.1,
                 "has_exif": false
             }
         }

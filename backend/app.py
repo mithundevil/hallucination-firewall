@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from image_detector import analyze_image
+from video_analyzer import analyze_video
 from text_verifier import verify_text
 from firewall_engine import process_firewall_request
 from history_manager import save_to_history, get_history
@@ -68,6 +69,34 @@ def analyze_firewall_endpoint():
         
         return jsonify(format_response(True, "Firewall analysis completed", result))
     except Exception as e:
+        return jsonify(format_response(False, str(e))), 500
+
+@app.route('/analyze/video', methods=['POST'])
+def analyze_video_endpoint():
+    filepath = None
+    try:
+        video_file = request.files.get('video')
+        if not video_file:
+            return jsonify(format_response(False, "No video provided")), 400
+        
+        filename = secure_filename(video_file.filename)
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        video_file.save(filepath)
+        
+        result = analyze_video(filepath)
+        
+        # Cleanup
+        if filepath and os.path.exists(filepath):
+            os.remove(filepath)
+            
+        if "error" in result:
+             return jsonify(format_response(False, result["error"])), 400
+
+        save_to_history("Video Check", result)
+        return jsonify(format_response(True, "Video analysis completed", result))
+    except Exception as e:
+        if filepath and os.path.exists(filepath):
+            os.remove(filepath)
         return jsonify(format_response(False, str(e))), 500
 
 @app.route('/history', methods=['GET'])
