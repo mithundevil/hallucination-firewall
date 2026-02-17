@@ -1,5 +1,145 @@
 [
     {
+        "id": "20260207135707490982",
+        "timestamp": "2026-02-07T13:57:07.491016",
+        "type": "Multimodal Firewall",
+        "verdict": "WARNING",
+        "risk": "Medium",
+        "score": 55.0,
+        "details": {
+            "text_analysis": {
+                "text_score": 15,
+                "risk_level": "Low",
+                "explanation": "Missing necessary uncertainty or hedging markers.",
+                "detected_signals": [
+                    "Lack of hedging"
+                ]
+            },
+            "image_analysis": {
+                "image_type": "Photograph",
+                "cnn_score": 5.77,
+                "heuristic_score": 35,
+                "score": 55.0,
+                "risk_level": "Medium",
+                "result": "Suspicious Image (Possible AI)",
+                "explanation": "Audit Result: Suspicious Image (Possible AI) based on CNN confidence (5.77%) and structural heuristics (35%). Uncertainty markers detected.",
+                "metrics": {
+                    "laplacian_var": 1143.0,
+                    "fft_mean": 198.14,
+                    "has_exif": false,
+                    "resolution": "1440x5835"
+                }
+            },
+            "firewall_verdict": {
+                "verdict": "WARNING",
+                "risk_level": "Medium",
+                "score": 55.0,
+                "decision": "Potential inconsistencies detected. Recommend human verification."
+            }
+        }
+    },
+    {
+        "id": "20260207135607853252",
+        "timestamp": "2026-02-07T13:56:07.853295",
+        "type": "Multimodal Firewall",
+        "verdict": "SAFE",
+        "risk": "Low",
+        "score": 22.02,
+        "details": {
+            "text_analysis": {
+                "text_score": 15,
+                "risk_level": "Low",
+                "explanation": "Missing necessary uncertainty or hedging markers.",
+                "detected_signals": [
+                    "Lack of hedging"
+                ]
+            },
+            "image_analysis": {
+                "image_type": "Photograph",
+                "cnn_score": 5.75,
+                "heuristic_score": 60,
+                "score": 22.02,
+                "risk_level": "Low",
+                "result": "Likely Real Image",
+                "explanation": "Audit Result: Likely Real Image based on CNN confidence (5.75%) and structural heuristics (60%). ",
+                "metrics": {
+                    "laplacian_var": 3004.37,
+                    "fft_mean": 158.32,
+                    "has_exif": false,
+                    "resolution": "253x291"
+                }
+            },
+            "firewall_verdict": {
+                "verdict": "SAFE",
+                "risk_level": "Low",
+                "score": 22.02,
+                "decision": "Content passed security heuristics with low hallucination risk."
+            }
+        }
+    },
+    {
+        "id": "20260207135510145878",
+        "timestamp": "2026-02-07T13:55:10.145940",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 15,
+        "details": {
+            "text_score": 15,
+            "risk_level": "Low",
+            "explanation": "Missing necessary uncertainty or hedging markers.",
+            "detected_signals": [
+                "Lack of hedging"
+            ]
+        }
+    },
+    {
+        "id": "20260207135424068615",
+        "timestamp": "2026-02-07T13:54:24.068705",
+        "type": "Image Check",
+        "verdict": "Likely Real Image",
+        "risk": "Low",
+        "score": 24.55,
+        "details": {
+            "image_type": "Photograph",
+            "cnn_score": 9.36,
+            "heuristic_score": 60,
+            "score": 24.55,
+            "risk_level": "Low",
+            "result": "Likely Real Image",
+            "explanation": "Audit Result: Likely Real Image based on CNN confidence (9.36%) and structural heuristics (60%). ",
+            "metrics": {
+                "laplacian_var": 1656.99,
+                "fft_mean": 169.22,
+                "has_exif": false,
+                "resolution": "472x612"
+            }
+        }
+    },
+    {
+        "id": "20260207134447481753",
+        "timestamp": "2026-02-07T13:44:47.481843",
+        "type": "Image Check",
+        "verdict": "Likely Real Image",
+        "risk": "Low",
+        "score": 36.5,
+        "details": {
+            "image_type": "Photograph",
+            "cnn_score": 20.0,
+            "heuristic_score": 75,
+            "score": 36.5,
+            "risk_level": "Low",
+            "result": "Likely Real Image",
+            "explanation": "Audit Result: Likely Real Image based on CNN confidence (20.0%) and structural heuristics (75%). ",
+            "metrics": {
+                "laplacian_var": 65.0,
+                "fft_mean": 150.86,
+                "has_exif": false,
+                "resolution": "896x1152"
+            }
+        }
+    },
+    {
         "id": "20260127150032064914",
         "timestamp": "2026-01-27T15:00:32.065023",
         "type": "Multimodal Firewall",
@@ -982,83 +1122,6 @@
             "score": 0,
             "risk_level": "Low",
             "explanation": "Text appears coherent and balanced."
-        }
-    },
-    {
-        "id": "20260127105324865440",
-        "timestamp": "2026-01-27T10:53:24.865440",
-        "type": "Text Check",
-        "verdict": "Analyzed",
-        "risk": "Low",
-        "score": 0,
-        "details": {
-            "score": 0,
-            "risk_level": "Low",
-            "explanation": "Text appears coherent and balanced."
-        }
-    },
-    {
-        "id": "20260127105323733325",
-        "timestamp": "2026-01-27T10:53:23.733325",
-        "type": "Text Check",
-        "verdict": "Analyzed",
-        "risk": "Low",
-        "score": 0,
-        "details": {
-            "score": 0,
-            "risk_level": "Low",
-            "explanation": "Text appears coherent and balanced."
-        }
-    },
-    {
-        "id": "20260127105249772204",
-        "timestamp": "2026-01-27T10:52:49.772204",
-        "type": "Text Check",
-        "verdict": "Analyzed",
-        "risk": "Low",
-        "score": 0,
-        "details": {
-            "score": 0,
-            "risk_level": "Low",
-            "explanation": "Text appears coherent and balanced."
-        }
-    },
-    {
-        "id": "20260127105211421408",
-        "timestamp": "2026-01-27T10:52:11.421408",
-        "type": "Image Check",
-        "verdict": "Likely Real",
-        "risk": "Medium",
-        "score": 0,
-        "details": {
-            "result": "Likely Real",
-            "confidence": 50,
-            "risk_level": "Medium",
-            "explanation": "Missing camera EXIF metadata (common in AI-generated images). | High-frequency synthetic noise detected.",
-            "metrics": {
-                "laplacian_variance": 1130.89,
-                "fft_mean": 147.45,
-                "has_metadata": false
-            }
-        }
-    },
-    {
-        "id": "20260127105154847760",
-        "timestamp": "2026-01-27T10:51:54.847760",
-        "type": "Image Check",
-        "verdict": "Likely Real",
-        "risk": "Medium",
-        "score": 0,
-        "details": {
-            "result": "Likely Real",
-            "confidence": 50,
-            "risk_level": "Medium",
-            "explanation": "Missing camera EXIF metadata (common in AI-generated images). | High-frequency synthetic noise detected.",
-            "metrics": {
-                "laplacian_variance": 1989.74,
-                "fft_mean": 154.39,
-                "has_metadata": false
-            }
         }
     }
 ]
