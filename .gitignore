@@ -50,7 +50,7 @@ frontend-react/.env.production.local
 # Project Specific
 backend/uploads/
 backend/dataset/
-backend/models/*.pth
+backend/models/
 
 # IDE
 .vscode/

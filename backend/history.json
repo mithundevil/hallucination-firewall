@@ -1,5 +1,392 @@
 [
     {
+        "id": "20260217165739553433",
+        "timestamp": "2026-02-17T16:57:39.553471",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "High",
+        "score": 0,
+        "details": {
+            "video_label": "AI Generated Video",
+            "ai_frame_percentage": 90.91,
+            "total_frames_analyzed": 11,
+            "risk_level": "High",
+            "explanation": "Video analysis complete. Processed 11 frames. 90% of frames showed high AI indicators, while 100% showed moderate signs.",
+            "average_ai_score": 95.2
+        }
+    },
+    {
+        "id": "20260217165725275036",
+        "timestamp": "2026-02-17T16:57:25.275093",
+        "type": "Video Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "video_label": "Likely Real Video",
+            "ai_frame_percentage": 10.94,
+            "total_frames_analyzed": 64,
+            "risk_level": "Low",
+            "explanation": "Video analysis complete. Processed 64 frames. 10% of frames showed high AI indicators, while 21% showed moderate signs.",
+            "average_ai_score": 22.48
+        }
+    },
+    {
+        "id": "20260217165503436094",
+        "timestamp": "2026-02-17T16:55:03.436130",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Medium",
+        "score": 51.11,
+        "details": {
+            "text_score": 51.11,
+            "reliable_prob": 48.89,
+            "hallucination_prob": 51.11,
+            "risk_level": "Medium",
+            "explanation": "Moderate signs of linguistic uncertainty or ungrounded claims.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217165449956597",
+        "timestamp": "2026-02-17T16:54:49.956670",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 49.11,
+        "details": {
+            "text_score": 49.11,
+            "reliable_prob": 50.89,
+            "hallucination_prob": 49.11,
+            "risk_level": "Low",
+            "explanation": "Content appears reliable and grounded according to NLP audit.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217165423669889",
+        "timestamp": "2026-02-17T16:54:23.669978",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 49.11,
+        "details": {
+            "text_score": 49.11,
+            "reliable_prob": 50.89,
+            "hallucination_prob": 49.11,
+            "risk_level": "Low",
+            "explanation": "Content appears reliable and grounded according to NLP audit.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217164209438916",
+        "timestamp": "2026-02-17T16:42:09.438948",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 47.63,
+        "details": {
+            "text_score": 47.63,
+            "reliable_prob": 52.37,
+            "hallucination_prob": 47.63,
+            "risk_level": "Low",
+            "explanation": "Content appears reliable and grounded according to NLP audit.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217164156678119",
+        "timestamp": "2026-02-17T16:41:56.678154",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 47.48,
+        "details": {
+            "text_score": 47.48,
+            "reliable_prob": 52.52,
+            "hallucination_prob": 47.48,
+            "risk_level": "Low",
+            "explanation": "Content appears reliable and grounded according to NLP audit.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217164137908597",
+        "timestamp": "2026-02-17T16:41:37.908628",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 46.53,
+        "details": {
+            "text_score": 46.53,
+            "reliable_prob": 53.47,
+            "hallucination_prob": 46.53,
+            "risk_level": "Low",
+            "explanation": "Content appears reliable and grounded according to NLP audit.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217164052357940",
+        "timestamp": "2026-02-17T16:40:52.357992",
+        "type": "Image Check",
+        "verdict": "Likely Real Image",
+        "risk": "Low",
+        "score": 18.27,
+        "details": {
+            "image_type": "Photograph",
+            "cnn_score": 8.95,
+            "heuristic_score": 40,
+            "score": 18.27,
+            "risk_level": "Low",
+            "result": "Likely Real Image",
+            "explanation": "Audit Result: Likely Real Image based on CNN confidence (8.95%) and structural heuristics (40%). ",
+            "metrics": {
+                "laplacian_var": 103.55,
+                "fft_mean": 179.86,
+                "has_exif": true,
+                "resolution": "3024x4032"
+            }
+        }
+    },
+    {
+        "id": "20260217164035062797",
+        "timestamp": "2026-02-17T16:40:35.062874",
+        "type": "Image Check",
+        "verdict": "Likely Real Image",
+        "risk": "Low",
+        "score": 8.96,
+        "details": {
+            "image_type": "Photograph",
+            "cnn_score": 12.8,
+            "heuristic_score": 0,
+            "score": 8.96,
+            "risk_level": "Low",
+            "result": "Likely Real Image",
+            "explanation": "Audit Result: Likely Real Image based on CNN confidence (12.8%) and structural heuristics (0%). ",
+            "metrics": {
+                "laplacian_var": 326.26,
+                "fft_mean": 152.44,
+                "has_exif": true,
+                "resolution": "612x408"
+            }
+        }
+    },
+    {
+        "id": "20260217164020550525",
+        "timestamp": "2026-02-17T16:40:20.550634",
+        "type": "Image Check",
+        "verdict": "Suspicious Image (Possible AI)",
+        "risk": "Medium",
+        "score": 55.0,
+        "details": {
+            "image_type": "Photograph",
+            "cnn_score": 9.94,
+            "heuristic_score": 35,
+            "score": 55.0,
+            "risk_level": "Medium",
+            "result": "Suspicious Image (Possible AI)",
+            "explanation": "Audit Result: Suspicious Image (Possible AI) based on CNN confidence (9.94%) and structural heuristics (35%). Uncertainty markers detected.",
+            "metrics": {
+                "laplacian_var": 454.64,
+                "fft_mean": 167.02,
+                "has_exif": false,
+                "resolution": "1024x1024"
+            }
+        }
+    },
+    {
+        "id": "20260217163824288183",
+        "timestamp": "2026-02-17T16:38:24.288220",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Medium",
+        "score": 50.66,
+        "details": {
+            "text_score": 50.66,
+            "reliable_prob": 49.34,
+            "hallucination_prob": 50.66,
+            "risk_level": "Medium",
+            "explanation": "Moderate signs of linguistic uncertainty or ungrounded claims.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217163810737188",
+        "timestamp": "2026-02-17T16:38:10.737221",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Medium",
+        "score": 52.83,
+        "details": {
+            "text_score": 52.83,
+            "reliable_prob": 47.17,
+            "hallucination_prob": 52.83,
+            "risk_level": "Medium",
+            "explanation": "Moderate signs of linguistic uncertainty or ungrounded claims.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217163751300723",
+        "timestamp": "2026-02-17T16:37:51.300924",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Medium",
+        "score": 51.53,
+        "details": {
+            "text_score": 51.53,
+            "reliable_prob": 48.47,
+            "hallucination_prob": 51.53,
+            "risk_level": "Medium",
+            "explanation": "Moderate signs of linguistic uncertainty or ungrounded claims.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217161321889304",
+        "timestamp": "2026-02-17T16:13:21.889331",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 47.3,
+        "details": {
+            "text_score": 47.3,
+            "reliable_prob": 52.7,
+            "hallucination_prob": 47.3,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217161138700941",
+        "timestamp": "2026-02-17T16:11:38.700968",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 46.0,
+        "details": {
+            "text_score": 46.0,
+            "reliable_prob": 54.0,
+            "hallucination_prob": 46.0,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217161111810641",
+        "timestamp": "2026-02-17T16:11:11.810668",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 47.92,
+        "details": {
+            "text_score": 47.92,
+            "reliable_prob": 52.08,
+            "hallucination_prob": 47.92,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217161026176357",
+        "timestamp": "2026-02-17T16:10:26.176388",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 45.15,
+        "details": {
+            "text_score": 45.15,
+            "reliable_prob": 54.85,
+            "hallucination_prob": 45.15,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217160730746735",
+        "timestamp": "2026-02-17T16:07:30.746779",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 45.15,
+        "details": {
+            "text_score": 45.15,
+            "reliable_prob": 54.85,
+            "hallucination_prob": 45.15,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217160518998988",
+        "timestamp": "2026-02-17T16:05:18.999081",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 45.48,
+        "details": {
+            "text_score": 45.48,
+            "reliable_prob": 54.52,
+            "hallucination_prob": 45.48,
+            "risk_level": "Low",
+            "explanation": "Text appears grounded and reliable based on NLP classification.",
+            "model_status": "Active"
+        }
+    },
+    {
+        "id": "20260217153840146366",
+        "timestamp": "2026-02-17T15:38:40.146503",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 15,
+        "details": {
+            "text_score": 15,
+            "risk_level": "Low",
+            "explanation": "Missing necessary uncertainty or hedging markers.",
+            "detected_signals": [
+                "Lack of hedging"
+            ]
+        }
+    },
+    {
+        "id": "20260217153818995770",
+        "timestamp": "2026-02-17T15:38:18.995841",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 15,
+        "details": {
+            "text_score": 15,
+            "risk_level": "Low",
+            "explanation": "Missing necessary uncertainty or hedging markers.",
+            "detected_signals": [
+                "Lack of hedging"
+            ]
+        }
+    },
+    {
+        "id": "20260217153756055227",
+        "timestamp": "2026-02-17T15:37:56.055314",
+        "type": "Text Check",
+        "verdict": "Analyzed",
+        "risk": "Low",
+        "score": 0,
+        "details": {
+            "text_score": 0,
+            "risk_level": "Low",
+            "explanation": "Text is balanced and moderate.",
+            "detected_signals": []
+        }
+    },
+    {
         "id": "20260217150025120579",
         "timestamp": "2026-02-17T15:00:25.120851",
         "type": "Video Check",
@@ -589,544 +976,6 @@
             "detected_signals": [
                 "Lack of hedging"
             ]
-        }
-    },
-    {
-        "id": "20260207135424068615",
-        "timestamp": "2026-02-07T13:54:24.068705",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 24.55,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 9.36,
-            "heuristic_score": 60,
-            "score": 24.55,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Audit Result: Likely Real Image based on CNN confidence (9.36%) and structural heuristics (60%). ",
-            "metrics": {
-                "laplacian_var": 1656.99,
-                "fft_mean": 169.22,
-                "has_exif": false,
-                "resolution": "472x612"
-            }
-        }
-    },
-    {
-        "id": "20260207134447481753",
-        "timestamp": "2026-02-07T13:44:47.481843",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 36.5,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 20.0,
-            "heuristic_score": 75,
-            "score": 36.5,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Audit Result: Likely Real Image based on CNN confidence (20.0%) and structural heuristics (75%). ",
-            "metrics": {
-                "laplacian_var": 65.0,
-                "fft_mean": 150.86,
-                "has_exif": false,
-                "resolution": "896x1152"
-            }
-        }
-    },
-    {
-        "id": "20260127150032064914",
-        "timestamp": "2026-01-27T15:00:32.065023",
-        "type": "Multimodal Firewall",
-        "verdict": "WARNING",
-        "risk": "Medium",
-        "score": 55.0,
-        "details": {
-            "text_analysis": {
-                "text_score": 15,
-                "risk_level": "Low",
-                "explanation": "Missing necessary uncertainty or hedging markers.",
-                "detected_signals": [
-                    "Lack of hedging"
-                ]
-            },
-            "image_analysis": {
-                "image_type": "Photograph",
-                "cnn_score": 6.66,
-                "heuristic_score": 35,
-                "score": 55.0,
-                "risk_level": "Medium",
-                "result": "Suspicious Image (Possible AI)",
-                "explanation": "Audit Result: Suspicious Image (Possible AI) based on CNN confidence (6.66%) and structural heuristics (35%). Uncertainty markers detected.",
-                "metrics": {
-                    "laplacian_var": 405.7,
-                    "fft_mean": 168.57,
-                    "has_exif": false,
-                    "resolution": "896x1152"
-                }
-            },
-            "firewall_verdict": {
-                "verdict": "WARNING",
-                "risk_level": "Medium",
-                "score": 55.0,
-                "decision": "Potential inconsistencies detected. Recommend human verification."
-            }
-        }
-    },
-    {
-        "id": "20260127145938567327",
-        "timestamp": "2026-01-27T14:59:38.567412",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 17.81,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 10.45,
-            "heuristic_score": 35,
-            "score": 17.81,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Audit Result: Likely Real Image based on CNN confidence (10.45%) and structural heuristics (35%). ",
-            "metrics": {
-                "laplacian_var": 669.38,
-                "fft_mean": 143.29,
-                "has_exif": false,
-                "resolution": "195x259"
-            }
-        }
-    },
-    {
-        "id": "20260127145924907033",
-        "timestamp": "2026-01-27T14:59:24.907141",
-        "type": "Image Check",
-        "verdict": "Other (Graphic/Illustration)",
-        "risk": "Low",
-        "score": 0,
-        "details": {
-            "image_type": "Other Image",
-            "score": 0,
-            "risk_level": "Low",
-            "result": "Other (Graphic/Illustration)",
-            "explanation": "Detected as a Graphic/Cartoon/Screenshot. Non-photographic images are not subject to Deepfake analysis.",
-            "metrics": {
-                "is_photo": false
-            }
-        }
-    },
-    {
-        "id": "20260127145910260154",
-        "timestamp": "2026-01-27T14:59:10.260244",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 24.77,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 9.67,
-            "heuristic_score": 60,
-            "score": 24.77,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Audit Result: Likely Real Image based on CNN confidence (9.67%) and structural heuristics (60%). ",
-            "metrics": {
-                "laplacian_var": 3998.14,
-                "fft_mean": 161.21,
-                "has_exif": false,
-                "resolution": "311x162"
-            }
-        }
-    },
-    {
-        "id": "20260127145852663382",
-        "timestamp": "2026-01-27T14:58:52.663446",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 29.27,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 16.1,
-            "heuristic_score": 60,
-            "score": 29.27,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Audit Result: Likely Real Image based on CNN confidence (16.1%) and structural heuristics (60%). ",
-            "metrics": {
-                "laplacian_var": 1989.74,
-                "fft_mean": 154.4,
-                "has_exif": false,
-                "resolution": "183x275"
-            }
-        }
-    },
-    {
-        "id": "20260127144524543541",
-        "timestamp": "2026-01-27T14:45:24.543580",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 57.98,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 57.12,
-            "heuristic_score": 60,
-            "score": 57.98,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (57.12%) | Heuristics (60%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 3998.14,
-                "fft_mean": 161.21,
-                "has_exif": false,
-                "resolution": "311x162"
-            }
-        }
-    },
-    {
-        "id": "20260127144514642006",
-        "timestamp": "2026-01-27T14:45:14.642040",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 48.96,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 54.94,
-            "heuristic_score": 35,
-            "score": 48.96,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (54.94%) | Heuristics (35%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 772.27,
-                "fft_mean": 145.46,
-                "has_exif": false,
-                "resolution": "202x249"
-            }
-        }
-    },
-    {
-        "id": "20260127144459685909",
-        "timestamp": "2026-01-27T14:44:59.685998",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 45.78,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 50.4,
-            "heuristic_score": 35,
-            "score": 45.78,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (50.4%) | Heuristics (35%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 924.81,
-                "fft_mean": 146.69,
-                "has_exif": false,
-                "resolution": "225x225"
-            }
-        }
-    },
-    {
-        "id": "20260127144422613174",
-        "timestamp": "2026-01-27T14:44:22.613210",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 63.44,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 58.49,
-            "heuristic_score": 75,
-            "score": 63.44,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (58.49%) | Heuristics (75%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 46.87,
-                "fft_mean": 146.1,
-                "has_exif": false,
-                "resolution": "961x1280"
-            }
-        }
-    },
-    {
-        "id": "20260127144400559929",
-        "timestamp": "2026-01-27T14:44:00.559970",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 59.22,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 58.89,
-            "heuristic_score": 60,
-            "score": 59.22,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (58.89%) | Heuristics (60%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 2071.87,
-                "fft_mean": 194.25,
-                "has_exif": false,
-                "resolution": "2500x2500"
-            }
-        }
-    },
-    {
-        "id": "20260127144333227787",
-        "timestamp": "2026-01-27T14:43:33.227839",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 39.11,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 55.87,
-            "heuristic_score": 0,
-            "score": 39.11,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Safety Calibrated: CNN Confidence (55.87%) | Heuristics (0%) | Decision: Likely Real Image. Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 1094.3,
-                "fft_mean": 142.67,
-                "has_exif": true,
-                "resolution": "225x273"
-            }
-        }
-    },
-    {
-        "id": "20260127144314182454",
-        "timestamp": "2026-01-27T14:43:14.182521",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 63.44,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 58.49,
-            "heuristic_score": 75,
-            "score": 63.44,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (58.49%) | Heuristics (75%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 46.87,
-                "fft_mean": 146.1,
-                "has_exif": false,
-                "resolution": "961x1280"
-            }
-        }
-    },
-    {
-        "id": "20260127144300221699",
-        "timestamp": "2026-01-27T14:43:00.221736",
-        "type": "Image Check",
-        "verdict": "Likely Real Image",
-        "risk": "Low",
-        "score": 39.07,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 55.82,
-            "heuristic_score": 0,
-            "score": 39.07,
-            "risk_level": "Low",
-            "result": "Likely Real Image",
-            "explanation": "Safety Calibrated: CNN Confidence (55.82%) | Heuristics (0%) | Decision: Likely Real Image. Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 326.26,
-                "fft_mean": 152.44,
-                "has_exif": true,
-                "resolution": "612x408"
-            }
-        }
-    },
-    {
-        "id": "20260127144243992629",
-        "timestamp": "2026-01-27T14:42:43.992726",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 50.62,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 55.17,
-            "heuristic_score": 40,
-            "score": 50.62,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (55.17%) | Heuristics (40%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 61.05,
-                "fft_mean": 172.83,
-                "has_exif": true,
-                "resolution": "3024x4032"
-            }
-        }
-    },
-    {
-        "id": "20260127144225721655",
-        "timestamp": "2026-01-27T14:42:25.721727",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 59.43,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 52.76,
-            "heuristic_score": 75,
-            "score": 59.43,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (52.76%) | Heuristics (75%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 128.9,
-                "fft_mean": 156.33,
-                "has_exif": false,
-                "resolution": "853x1280"
-            }
-        }
-    },
-    {
-        "id": "20260127144214337675",
-        "timestamp": "2026-01-27T14:42:14.337730",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 54.35,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 62.65,
-            "heuristic_score": 35,
-            "score": 54.35,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (62.65%) | Heuristics (35%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 1130.89,
-                "fft_mean": 147.47,
-                "has_exif": false,
-                "resolution": "224x224"
-            }
-        }
-    },
-    {
-        "id": "20260127144201848691",
-        "timestamp": "2026-01-27T14:42:01.848718",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 48.99,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 54.98,
-            "heuristic_score": 35,
-            "score": 48.99,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (54.98%) | Heuristics (35%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 405.7,
-                "fft_mean": 168.57,
-                "has_exif": false,
-                "resolution": "896x1152"
-            }
-        }
-    },
-    {
-        "id": "20260127144148995701",
-        "timestamp": "2026-01-27T14:41:48.995821",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 58.34,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 51.2,
-            "heuristic_score": 75,
-            "score": 58.34,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (51.2%) | Heuristics (75%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 65.0,
-                "fft_mean": 150.86,
-                "has_exif": false,
-                "resolution": "896x1152"
-            }
-        }
-    },
-    {
-        "id": "20260127144111365557",
-        "timestamp": "2026-01-27T14:41:11.365616",
-        "type": "Image Check",
-        "verdict": "Suspicious Image (Possible AI)",
-        "risk": "Medium",
-        "score": 52.56,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 49.37,
-            "heuristic_score": 60,
-            "score": 52.56,
-            "risk_level": "Medium",
-            "result": "Suspicious Image (Possible AI)",
-            "explanation": "Safety Calibrated: CNN Confidence (49.37%) | Heuristics (60%) | Decision: Suspicious Image (Possible AI). Note: Model uncertainty is accounted for.",
-            "metrics": {
-                "laplacian_var": 1989.74,
-                "fft_mean": 154.4,
-                "has_exif": false,
-                "resolution": "183x275"
-            }
-        }
-    },
-    {
-        "id": "20260127143827742245",
-        "timestamp": "2026-01-27T14:38:27.742287",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 45.6,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 33.0,
-            "heuristic_score": 75,
-            "score": 45.6,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (33.0%) | Heuristic Score (75%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 65.0,
-                "fft_mean": 150.86,
-                "has_exif": false
-            }
-        }
-    },
-    {
-        "id": "20260127143817022644",
-        "timestamp": "2026-01-27T14:38:17.022740",
-        "type": "Image Check",
-        "verdict": "Real Image",
-        "risk": "Low",
-        "score": 30.37,
-        "details": {
-            "image_type": "Photograph",
-            "cnn_score": 28.39,
-            "heuristic_score": 35,
-            "score": 30.37,
-            "risk_level": "Low",
-            "result": "Real Image",
-            "explanation": "Calibrated Analysis: CNN Confidence (28.39%) | Heuristic Score (35%) | Final Risk: Low",
-            "metrics": {
-                "laplacian_var": 405.7,
-                "fft_mean": 168.57,
-                "has_exif": false
-            }
         }
     }
 ]

@@ -6,3 +6,6 @@ flask-cors
 python-dateutil
 torch
 torchvision
+transformers
+datasets
+scikit-learn
